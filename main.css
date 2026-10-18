@@ -1,39 +1,38 @@
 *{
+    background-color: bisque;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: blueviolet;
+}
+.card{
+    gap: 12px;
+} 
+
+.card{
+    border: solid 2px gray;
+    border-radius: 20px;
+    padding: 12px;
+}
+.card{
+    border-radius: 10px 10px 0 0;
+    transition: 0,8s;
+}
+img:hover{
+    color: black;
+    transform: scale(1.2) rotate(360deg);
 }
 
-.container{
-    max-width: 800px;
-    margin: 0 auto;
+.card-2{
+    border: solid 2px gray;
+    border-radius: 20px;
+    padding: 12px;
 }
+.icon{
+    position: fixed;
+    right: 220px;
+    bottom: 20px;
 
-section{
-    margin: 50px 0;
-}
-
-.text-section{
-    background-color: darkorchid;
-    padding: 30 0;
-}
-.row{
-    display: flex;
-    align-items: center
-    ;
-    gap: 20px;
-    color: white;
-}
-
-img{
-    max-width: 100%
     
+   
+    padding: 10px;
+    border-radius: 100%;
 }
-h1{
-    color: white;
-    text-align: center;
-}
-
-
-
