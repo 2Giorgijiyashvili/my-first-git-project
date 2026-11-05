@@ -1,73 +1,108 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  background-color: bisque;
 }
 
-header{
-    padding: 30px 0;
+body {
+  margin: 0;
+  padding: 32px 16px;
+  background: #eaf3ff;
+  color: #111;
+  font-family: Arial, sans-serif;
+  align-items: center;
 }
 
-header h2{
-    text-align: center;
-    font-family: "Isometra", serif;
-    letter-spacing: 2px;
+.form-card {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #fff;
 }
 
-section h4{
+.brand {
+  margin-bottom: 24px;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  margin: 12px 0 32px;
+  text-align: center;
+  font-size: 28px;
+}
+
+h2 {
+  margin: 24px 0 12px;
+  color: #10245c;
+  font-size: 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+label {
+  flex: 0 0 120px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="datetime-local"],
+textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid #555;
+  font: inherit;
+}
+
+textarea {
+  min-height: 64px;
+  resize: vertical;
+}
+
+.full-width {
+  margin-top: 16px;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin: 12px 0 18px;
+}
+
+.options label {
+  display: inline-flex;
+  flex: initial;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .field {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  label {
+    flex-basis: auto;
+  }
+}
+
     
-    font-family: "Isometra", serif;
-    letter-spacing: 2px;
-}
-.container{
-    
-    
-    padding: 60px 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.mb-16{
-    margin-bottom: 16px;
-}
-
-.card .stars{
-    color: rgb(229, 229, 24);
-}
-
-
-
-.card .price{
-    font-size: 24px;
-    font-weight: bold;
-}
-
-img{
-    max-width: 100%;
-}
-
-.view{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-.view button{
-    border: 1px solid gray;
-    border-radius: 25px;
-    padding: 16px 54px;
-    transition: 0,3s;
-}
-
-
-.view button:hover{
-  background-color: black;
-  color: white;
-}
-
-  @media only screen and (max-width: 768px) {
-     .card {
-         width: 100%;
-         
-    }
-}
